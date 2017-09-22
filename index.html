@@ -1,10 +1,37 @@
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="theme.css">    
-</head>
-<h1>What future will you hold?</h1>
+    <link rel="stylesheet" href="main.css">
+
+    <h1> HOW TO WORKOUT</h1>
+    </head>
+<body>
+   
+    <p id="what">Want to get big without lifting a finger? </p>
+    <p>
+        This is You, Now click the image to get some results
+    </p>
+        <img id="image" src="http://1.bp.blogspot.com/-j7kBIqpJjFo/T-26gADF8nI/AAAAAAAAEH8/WkuUlHYK7Jw/s1600/fat-heart.jpg" alt="Mountain View" style="width:304px;height:228px;"  onclick="changeImage()">
+        <script>
+        function changeImage() {
+
+        if (document.getElementById("image").src == "http://1.bp.blogspot.com/-j7kBIqpJjFo/T-26gADF8nI/AAAAAAAAEH8/WkuUlHYK7Jw/s1600/fat-heart.jpg") 
+        {
+            document.getElementById("image").src = "http://i.huffpost.com/gen/1000303/thumbs/o-60YEARS-OLD-570.jpg?6";
+             document.body.style.backgroundColor = "Pink";
+             document.getElementById("what").style.fontSize = "70px"
+            document.getElementById("what").innerHTML ="NOW YOU ARE RIPPED, Click image and enjoy your twinky"
+        }
+        else 
+        {
+            document.getElementById("image").src = "http://1.bp.blogspot.com/-j7kBIqpJjFo/T-26gADF8nI/AAAAAAAAEH8/WkuUlHYK7Jw/s1600/fat-heart.jpg";
+            document.body.style.backgroundColor = "blue";
+            document.getElementById("what").style.fontSize = "14px"
+            document.getElementById("what").innerHTML ="This is You, Now click the image to get some results"
+        }
+    }</script>
+        <br/>
     
-<p>Do you want to play?</p>
-    <a href="Play.html"> yes</a>
-    <a href="Goodbye.html"> no</a>
-</html
+</body>
+    <footer> Like what you see?? Call me <a>555-555-5555</a>
+    </footer>
+</html>
